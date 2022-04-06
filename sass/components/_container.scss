@@ -1,0 +1,54 @@
+.content-container {
+  display: flex;
+  margin-bottom: 4rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  @include respond(phone) {
+    padding: 0 1rem;
+  }
+
+  &:nth-of-type(2n) {
+    flex-direction: row-reverse;
+
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+}
+
+.blok1 {
+  width: 35%;
+  padding: 0 2rem 2rem 2rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 0.8rem 0;
+  }
+}
+
+.blok2 {
+  width: 65%;
+  padding: 0 2rem 2rem 2rem;
+  img {
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 0 1.5rem 3.5rem rgba($color-black, 0.2);
+  }
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  @include respond(phone) {
+    padding: 0.8rem 0;
+  }
+}

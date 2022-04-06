@@ -1,0 +1,221 @@
+.footer {
+  // background-color: $color-grey-dark-3;
+  // padding: 10rem 0;
+  // font-size: 1.4rem;
+  // color: $color-grey-light-1;
+
+  // @include respond(tab-port) {
+  //   padding: 8rem 0;
+  // }
+
+  // &__logo-box {
+  //   text-align: center;
+  //   margin-bottom: 8rem;
+
+  //   @include respond(tab-port) {
+  //     margin-bottom: 6rem;
+  //   }
+  // }
+
+  // &__logo {
+  //   width: 15rem;
+  //   height: auto;
+  // }
+
+  // &__navigation {
+  //   border-top: 1px solid $color-grey-dark;
+  //   padding-top: 2rem;
+  //   display: inline-block;
+
+  //   @include respond(tab-port) {
+  //     width: 100%;
+  //     text-align: center;
+  //   }
+  // }
+
+  // &__list {
+  //   list-style: none;
+  // }
+
+  // &__item {
+  //   display: inline-block;
+
+  //   &:not(:last-child) {
+  //     margin-right: 1.5rem;
+  //   }
+  // }
+
+  // &__link {
+  //   &:link,
+  //   &:visited {
+  //     color: $color-grey-light-1;
+  //     background-color: $color-grey-dark-3;
+  //     text-decoration: none;
+  //     text-transform: uppercase;
+  //     display: inline-block;
+  //     transition: all 0.2s;
+  //   }
+
+  //   &:hover,
+  //   &:active {
+  //     color: $color-primary;
+  //     box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+  //     transform: rotate(5deg) scale(1.3);
+  //   }
+  // }
+  // &__copyright {
+  //   border-top: 1px solid $color-grey-dark;
+  //   padding-top: 2rem;
+  //   width: 80%;
+  //   float: right;
+
+  //   @include respond(tab-port) {
+  //     width: 100%;
+  //     float: none;
+  //   }
+  // }
+
+  background-color: $color-grey-dark-3;
+  padding: 10rem 0;
+  font-size: 1.7rem;
+  color: $color-grey-light-2;
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+  //   &-container {
+  //     width: 100%;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     text-align: center;
+
+  //     h1 {
+  //       text-align: center;
+  //     }
+  //     &__links > ul > li,
+  //     &__social > ul > li {
+  //       display: inline-block;
+  //       text-decoration: none;
+  //     }
+
+  //     &__links > ul > li > a {
+  //       text-decoration: none;
+  //       color: $color-white;
+  //       font-size: 2rem;
+  //       padding-left: 1rem;
+  //       letter-spacing: 0.1rem;
+  //     }
+  //   }
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: $grid-width;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @include respond(tab-port) {
+      align-items: center;
+      text-align: center;
+    }
+
+    ul > li {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    ul > li > span {
+      text-decoration: none;
+      color: $color-grey-light-3;
+      letter-spacing: 0.1rem;
+    }
+
+    &--social {
+      display: none;
+      ul > li {
+        text-decoration: none;
+        display: inline;
+      }
+      ul > li > a {
+        text-decoration: none;
+        color: $color-grey-light-3;
+        letter-spacing: 0.1rem;
+      }
+      @include respond(tab-port) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-light-3;
+      letter-spacing: 0.1rem;
+      transition: all 0.2s;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-white;
+    }
+  }
+  // &-kontakt {
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: left;
+
+  //   @include respond(tab-port) {
+  //     align-items: center;
+  //     text-align: center;
+  //   }
+
+  //   ul > li {
+  //     text-decoration: none;
+  //     list-style: none;
+  //   }
+
+  //   ul > li > span {
+  //     text-decoration: none;
+  //     color: $color-grey-light-3;
+  //     letter-spacing: 0.1rem;
+  //   }
+  // }
+
+  // &-social {
+  //   width: 250px;
+  //   height: 250px;
+  //   background-color: green;
+
+  //   @include respond(tab-port) {
+  //     align-items: center;
+  //     text-align: center;
+  //   }
+  // }
+
+  &-heading {
+    text-transform: uppercase;
+    display: block;
+    font-size: 2.8rem;
+  }
+}
+
+// ICONS
+.fa-brands,
+.fa-solid {
+  color: $color-white;
+  padding: 1rem;
+}

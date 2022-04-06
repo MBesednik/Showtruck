@@ -1,0 +1,61 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY
+
+/*
+0 - 600 px:        Phone
+600 - 900 px:      Tablet portrait
+900 - 1200 px:     Tablet lancscape
+[1200 - 1800]:     Na ovu rezoluciju se normalni stilovi odnose
+1800 px:           Big desktop
+
+Redoslijed $breakpoint-a: Base + typography > general layout + grid > page layout > components
+
+Izbor $breakpoint-a:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+@mixin respond($breakpoint) {
+  // 1em = 16px => npr. 600/16px = 37.5em
+
+  @if $breakpoint == phone {
+    // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/font-awesome/all.css" />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="img/truck.png"/>
+
+    <title>Showtruck</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link" onclick="check()"
+              ><span>01</span>Naslovna</a
+            >
+          </li>
+          <li class="navigation__item" for="navi-toggle">
+            <a href="#section-about" class="navigation__link" onclick="check()">
+              <span>02</span>O nama</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-service"
+              class="navigation__link"
+              onclick="check()"
+              ><span>03</span>Usluge</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-gallery"
+              class="navigation__link"
+              onclick="check()"
+              ><span>04</span>Galerija</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-contact"
+              class="navigation__link"
+              onclick="check()"
+              ><span>05</span>Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- HEADER SLIDER -->
+    <header class="slider-container">
+  
+      <div class="slider-control left inactive"></div>
+      <div class="slider-control right"></div>
+      <ul class="slider-pagi"></ul>
+      <div class="slider">
+        <div class="slide slide-0 active">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <div class="header__text-box">
+              <h1 class="heading-primary">
+                <span class="heading-primary--main">Showtruck</span>
+                <span class="heading-primary--sub">istakni svoj brend</span>
+              </h1>
+              <a
+                href="index.html#section-about"
+                class="btn btn--white btn--animated"
+                >Saznajte više</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-1">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <div class="header__text-box">
+              <h1 class="heading-primary">
+                <span class="heading-primary--main">Showtruck</span>
+                <span class="heading-primary--sub">istakni svoj brend</span>
+              </h1>
+              <a href="#" class="btn btn--white btn--animated">Saznajte više</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide__bg">
+            <div class="slide__content">
+              <div class="header__text-box">
+                <h1 class="heading-primary">
+                  <span class="heading-primary--main">Showtruck</span>
+                  <span class="heading-primary--sub">istakni svoj brend</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Saznajte više</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide__bg">
+            <div class="slide__content">
+              <div class="header__text-box">
+                <h1 class="heading-primary">
+                  <span class="heading-primary--main">Showtruck</span>
+                  <span class="heading-primary--sub">istakni svoj brend</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Saznajte više</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" >
+        <div class="u-center-text u-margin-bottom-big" id="section-about">
+          <h2 class="heading-secondary">Ukratko o nama</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              STVARAMO BRAND PROSTORE!
+            </h3>
+            <p class="paragraph">
+              Ne samo da iznajmljujemo i stvaramo inovativna rješenja za
+              roadshow, već razvijamo i individualizirane marketinške koncepte
+              uživo, prilagođene vašim potrebama i ciljevima. Stvaramo
+              jedinstvene i autentične svjetove tema i brendova.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              VAŠ CILJ JE NAŠ CILJ!
+            </h3>
+            <p class="paragraph">
+              Osobna podrška koju pruža naš dobro uvježbani i iskusan tim čini
+              nas snažnim partnerom na području live marketinga i iskustva s
+              brendom.
+            </p>
+
+            <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+                src="../img/gallery__naslovna/6.jpg"
+              />
+              <img
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+                src="../img/gallery__naslovna/2.jpg"
+              />
+              <img
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+                src="../img/gallery__naslovna/5.jpg"
+              />
+
+              <!-- <img
+                src="img/nat-1-large.jpg"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              /><img
+                src="img/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              /><img
+                src="img/nat-3-large.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Vozimo svuda
+              </h3>
+              <p class="feature-box__text">
+                Sada uz naš show truck, ti donosiš svoj proizvod klijentima.
+                Lokacije je možda nekad bila problem, sada više nije.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-star"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Privuci publiku
+              </h3>
+              <p class="feature-box__text">
+                Zanimljive stvari poput showtrucka uvijek privuku ljude, koji
+                vrlo lako mogu postati budući klijenti Vaših usluga.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-display"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Led ekrani</h3>
+              <p class="feature-box__text">
+                Istakni svoj brend na našim velikim led ekranima, na moderan i
+                primamljiv način možemo dočarati ljudima tvoj brend.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-lightbulb"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Ideja</h3>
+              <p class="feature-box__text">
+                Imaš ideju, a ne znaš što s njome? Mi smo tu da Vaše ideje
+                prezentiramo publici na moderan, jedinstven i atraktivan način.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours">
+        <div class="u-center-text u-margin-bottom-big" id="section-service">
+          <h2 class="heading-secondary">Usluge koje vam nudimo</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Road show
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Najam prikolice</li>
+                    <li>Priprema</li>
+                    <li>Postavljanje bine</li>
+                    <li>Razglas</li>
+                    <li>Led ekrani</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Početna ponuda</p>
+                    <p class="card__price-value">5000 kn</p>
+                  </div>
+                  <a href="pages/roadshow.html" class="btn btn--white"
+                    >Saznajte više</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Dječji event
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Napuhanci</li>
+                    <li>Razglas</li>
+                    <li>Animatori</li>
+                    <li>Priprema</li>
+                    <li>24 h i više</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Početna ponuda</p>
+                    <p class="card__price-value">6000 kn</p>
+                  </div>
+                  <a href="pages/djecji_event.html" class="btn btn--white">Saznajte više</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Promocija
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Naljepnice</li>
+                    <li>Izrada reklame</li>
+                    <li>Priprema prikolice</li>
+                    <li>Led ekrani</li>
+                    <li>Razglas</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Početna ponuda</p>
+                    <p class="card__price-value">7000 kn</p>
+                  </div>
+                  <a href="pages/promocija.html" class="btn btn--white">Saznajte više</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-1-of-4">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    The snow adventurer
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>5 day turs</li>
+                    <li>Up to 15 people</li>
+                    <li>3 tour guides</li>
+                    <li>Sleep in provided tents</li>
+                    <li>Difficulty: hard</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$897</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="u-center-text u-margin-bottom-huge">
+          <a href="#section-contact" class="btn btn--green"
+            >Kontaktirajte nas</a
+          >
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <!-- <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div> -->
+
+        <!-- <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">We make people genuinely happy</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Marry Smith</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best week ever with my family
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                iure vero reiciendis deleniti non? Eligendi minima adipisci
+                molestiae perspiciatis magnam libero atque possimus similique
+                optio, incidunt architecto, consequatur, quam at.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Wow ym life is completly different now
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                iure vero reiciendis deleniti non? Eligendi minima adipisci
+                molestiae perspiciatis magnam libero atque possimus similique
+                optio, incidunt architecto, consequatur, quam at.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="" class="btn-text">Read all stories &rarr;</a>
+        </div> -->
+        <div class="u-center-text u-margin-bottom-big" id="section-gallery">
+          <h2 class="heading-secondary">Showtruck galerija</h2>
+        </div>
+        <div class="row container">
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/1.jpg"
+              ><img src="img/gallery__naslovna/1.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/2.jpg"
+              ><img src="img/gallery__naslovna/2.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/3.jpg"
+              ><img src="img/gallery__naslovna/3.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/4.jpg"
+              ><img src="img/gallery__naslovna/4.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/5.jpg"
+              ><img src="img/gallery__naslovna/5.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/6.jpg"
+              ><img src="img/gallery__naslovna/6.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/7.jpg"
+              ><img src="img/gallery__naslovna/7.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/10.jpg"
+              ><img src="img/gallery__naslovna/10.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/8.jpg"
+              ><img src="img/gallery__naslovna/8.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/9.jpg"
+              ><img src="img/gallery__naslovna/9.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/11.jpg"
+              ><img src="img/gallery__naslovna/11.jpg"
+            /></a>
+          </div>
+          <div class="grid-item">
+            <a data-fancybox="gallery" href="img/gallery__naslovna/12.jpg"
+              ><img src="img/gallery__naslovna/12.jpg"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-book" id="section-contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Kontaktirajte nas</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Ime i prezime"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Ime i prezime</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                  <textarea
+                    name=""
+                    id="poruka"
+                    rows="1"
+                    class="form__input"
+                    placeholder="Unesite poruku"
+                    required
+                  ></textarea>
+                  <label for="poruka" class="form__label">Unesite poruku</label>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Pošalji &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-block u-margin-bottom-medium">
+          <h3 class="footer-heading u-margin-bottom-small">Navigacija</h3>
+          <ul>
+            <li><a href="index.html" class="footer-link">Naslovna</a></li>
+            <li><a href="index.html#section-about" class="footer-link">O nama</a></li>
+            <li><a href="index.html#section-service" class="footer-link">Usluge</a></li>
+            <li><a href="index.html#section-gallery" class="footer-link">Galerija</a></li>
+            <li><a href="index.html#section-contact" class="footer-link">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-block u-margin-bottom-medium"> 
+          <h3 class="footer-heading u-margin-bottom-small">Kontakt</h3>
+          <ul>
+            <li><span>E-MAIL: info@roadshow-truck.eu</span></li>
+            <li><span>MOBITEL: +385 91 5415 444</span></li>
+            <li><span>TELEFON: 01 3470 094</span></li>
+          </ul>
+        </div>
+        <div class="footer-block u-margin-bottom-medium">
+          <h3 class="footer-heading u-margin-bottom-small">Lokacija</h3>
+           <ul>
+            <li><span>Borčec 44</span></li>
+            <li><span>10090 Zagreb</span></li>
+          </ul>
+        </div>
+         <div class="footer-block--social u-margin-bottom-medium">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-envelope fa-xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <!-- <section class="section-book"> -->
+          <div class="row">
+              <div class="book">
+                <a href="#section-service" class="popup__close">&times;</a>
+
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Kontaktirajte nas</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Ime i prezime"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Ime i prezime</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                  <textarea
+                    name=""
+                    id="poruka"
+                    rows="1"
+                    class="form__input"
+                    placeholder="Unesite poruku"
+                    required
+                  ></textarea>
+                  <label for="poruka" class="form__label">Unesite poruku</label>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Pošalji &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- </section> -->
+      </div>
+    </div>
+        
+        <!-- <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+            soluta impedit earum voluptatem officia, modi vitae sequi eius
+            voluptatum cumque corporis est. Repudiandae nostrum cupiditate vel
+            numquam cumque mollitia provident. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit.
+          </p>
+          <a href="#section-tours" class="btn btn--green">Book now</a>
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      function check() {
+        let inputs = document.getElementById('navi-toggle');
+        inputs.checked = false;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="slider.js"></script>
+
+    <!-- 
+    <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">Col 1 of 2</div>
+        <div class="col-1-of-2">Col 1 of 2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-2-of-3">Col 2 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-2-of-4">Col 2 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-3-of-4">Col 3 of 4</div>
+      </div>
+    </section> 
+-->
+  </body>
+</html>
