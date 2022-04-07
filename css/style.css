@@ -50,7 +50,8 @@ Izbor $breakpoint-a:
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
