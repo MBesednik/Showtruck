@@ -50,7 +50,6 @@ Izbor $breakpoint-a:
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
   overflow-x: hidden; }
   @media (max-width: 75em) {
     html {
@@ -64,6 +63,7 @@ html {
 
 body {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   overflow-x: hidden; }
   @media (max-width: 56.25em) {
     body {
@@ -92,7 +92,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 5rem; } }
+        font-size: 2.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -101,7 +101,8 @@ body {
     animation: moveInRight 1.5s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: 0.5rem; } }
+        letter-spacing: 0.5rem;
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -118,7 +119,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -185,6 +186,10 @@ body {
   font-size: 1.7rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1.35rem 1.75rem;
+      font-size: 1.4rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -303,6 +308,9 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+    @media (max-width: 37.5em) {
+      .card__heading-span {
+        padding: 1rem 0.5rem; } }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
@@ -715,6 +723,11 @@ svg {
     border-radius: 50%;
     border: 2px solid #fff;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .slider-pagi__elem {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin: 0 0.45rem; } }
     .slider-pagi__elem:before {
       content: '';
       position: absolute;
@@ -728,6 +741,9 @@ svg {
       transform: translate(-50%, -50%) scale(0); }
     .slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
       transform: translate(-50%, -50%) scale(1); }
+      @media (max-width: 37.5em) {
+        .slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+          transform: translate(-50%, -50%) scale(0.8); } }
 
 .slider {
   z-index: 1;
@@ -975,6 +991,9 @@ svg {
       text-decoration: none;
       color: #c7c7c7;
       letter-spacing: 0.1rem; }
+      @media (max-width: 37.5em) {
+        .footer-block ul > li > span {
+          font-size: 1.5rem; } }
     .footer-block--social {
       display: none; }
       .footer-block--social ul > li {
@@ -992,12 +1011,18 @@ svg {
     color: #c7c7c7;
     letter-spacing: 0.1rem;
     transition: all 0.2s; }
+    @media (max-width: 37.5em) {
+      .footer-link:link, .footer-link:visited {
+        font-size: 1.5rem; } }
   .footer-link:active, .footer-link:hover {
     color: #fff; }
   .footer-heading {
     text-transform: uppercase;
     display: block;
     font-size: 2.8rem; }
+    @media (max-width: 37.5em) {
+      .footer-heading {
+        font-size: 2.1rem; } }
 
 .fa-brands,
 .fa-solid {
@@ -1068,6 +1093,9 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 45%; } }
 
 .navigation__checkbox {
   display: none; }
@@ -1130,6 +1158,9 @@ svg {
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      top: 45%; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -1148,6 +1179,10 @@ svg {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+  @media (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.1rem;
+      padding: 0.5rem 2rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -1206,7 +1241,7 @@ svg {
       padding: 20rem 0; } }
   @media (max-width: 37.5em) {
     .section-about {
-      padding: 30rem 0 25rem 0; } }
+      padding: 20rem 0 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -1263,4 +1298,8 @@ svg {
         width: 65%; } }
     @media (max-width: 56.25em) {
       .book__form {
-        width: 100%; } }
+        width: 100%;
+        padding: 4.5rem; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        padding: 3.5rem; } }

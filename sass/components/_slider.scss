@@ -95,6 +95,12 @@ svg {
     border: 2px solid #fff;
     cursor: pointer;
 
+    @include respond(phone) {
+      width: 1.75rem;
+      height: 1.75rem;
+      margin: 0 0.45rem;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -111,6 +117,10 @@ svg {
     &.active:before,
     &:hover:before {
       transform: translate(-50%, -50%) scale(1);
+
+      @include respond(phone) {
+        transform: translate(-50%, -50%) scale(0.8);
+      }
     }
   }
 }
