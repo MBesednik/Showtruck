@@ -4,6 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO META TAGS -->
+    <link rel="canonical" href="https://roadshow-truck.eu/" />
+    <meta
+      name="description"
+      content="Iznajmljujemo i stvaramo inovativna rješenja za
+              roadshow, već razvijamo i individualizirane marketinške koncepte
+              uživo, prilagođene vašim potrebama i ciljevima. Stvaramo
+              jedinstvene i autentične svjetove tema i brendova."
+    />
+    <meta
+      name="keywords"
+      content="show, showtruck, led ekrani, zabava, događaji, publika, promocija, brend prostor"
+    />
+    <meta name="author" content="Showtruck" />
+
+    <!-- SOCIAL MEDIA META TAGS -->
+    <meta property="og:title" content="Showtruck" />
+    <meta
+      property="og:description"
+      content="Iznajmljujemo i stvaramo inovativna rješenja za
+              roadshow, već razvijamo i individualizirane marketinške koncepte
+              uživo, prilagođene vašim potrebama i ciljevima. Stvaramo
+              jedinstvene i autentične svjetove tema i brendova."
+    />
+    <meta property="og:type" content="website" />
+
     <!-- FONT -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
@@ -14,15 +40,41 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-
-    <link rel="shortcut icon" type="image/png" href="img/truck.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/truck.png" />
 
     <title>Showtruck</title>
   </head>
   <body>
-    <div class="navigation">
+    <!-- Page Loader Start -->
+    <!-- <div class="page-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> -->
+    <div class="loading-page">
+      <div class="loading-container">
+        <div class="loading-text">
+          <span class="heading-secondary">S</span>
+          <span class="heading-secondary">H</span>
+          <span class="heading-secondary">O</span>
+          <span class="heading-secondary">W</span>
+          <span class="heading-secondary">T</span>
+          <span class="heading-secondary">R</span>
+          <span class="heading-secondary">U</span>
+          <span class="heading-secondary">C</span>
+          <span class="heading-secondary">K</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Loader End -->
+
+    <div class="navigation hidden">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
@@ -71,8 +123,7 @@
     </div>
 
     <!-- HEADER SLIDER -->
-    <header class="slider-container">
-  
+    <header class="slider-container header hidden">
       <div class="slider-control left inactive"></div>
       <div class="slider-control right"></div>
       <ul class="slider-pagi"></ul>
@@ -85,9 +136,7 @@
                 <span class="heading-primary--main">Showtruck</span>
                 <span class="heading-primary--sub">istakni svoj brend</span>
               </h1>
-              <a
-                href="#section-about"
-                class="btn btn--white btn--animated"
+              <a href="#section-about" class="btn btn--white btn--animated"
                 >Saznajte više</a
               >
             </div>
@@ -101,7 +150,9 @@
                 <span class="heading-primary--main">Showtruck</span>
                 <span class="heading-primary--sub">istakni svoj brend</span>
               </h1>
-              <a href="#section-about" class="btn btn--white btn--animated">Saznajte više</a>
+              <a href="#section-about" class="btn btn--white btn--animated"
+                >Saznajte više</a
+              >
             </div>
           </div>
         </div>
@@ -113,7 +164,9 @@
                   <span class="heading-primary--main">Showtruck</span>
                   <span class="heading-primary--sub">istakni svoj brend</span>
                 </h1>
-                <a href="#section-about" class="btn btn--white btn--animated">Saznajte više</a>
+                <a href="#section-about" class="btn btn--white btn--animated"
+                  >Saznajte više</a
+                >
               </div>
             </div>
           </div>
@@ -126,7 +179,9 @@
                   <span class="heading-primary--main">Showtruck</span>
                   <span class="heading-primary--sub">istakni svoj brend</span>
                 </h1>
-                <a href="#section-about" class="btn btn--white btn--animated">Saznajte više</a>
+                <a href="#section-about" class="btn btn--white btn--animated"
+                  >Saznajte više</a
+                >
               </div>
             </div>
           </div>
@@ -134,27 +189,36 @@
       </div>
     </header>
 
-    <main>
-      <section class="section-about" >
+    <!-- LOADER -->
+    <!-- <div class="loading-page">
+      <div class="counter">
+        <p>loading</p>
+        <h1>0%</h1>
+        <hr />
+      </div>
+    </div> -->
+
+    <main class="main hidden">
+      <section class="section-about">
         <div class="u-center-text u-margin-bottom-big" id="section-about">
-          <h2 class="heading-secondary">Ukratko o nama</h2>
+          <h2 class="heading-secondary hide">Ukratko o nama</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              STVARAMO BRAND PROSTORE!
+            <h3 class="heading-tertiary u-margin-bottom-small hide">
+              STVARAMO BRAND PROSTORE
             </h3>
-            <p class="paragraph">
+            <p class="paragraph hide">
               Ne samo da iznajmljujemo i stvaramo inovativna rješenja za
               roadshow, već razvijamo i individualizirane marketinške koncepte
               uživo, prilagođene vašim potrebama i ciljevima. Stvaramo
               jedinstvene i autentične svjetove tema i brendova.
             </p>
-            <h3 class="heading-tertiary u-margin-bottom-small">
+            <h3 class="heading-tertiary u-margin-bottom-small hide">
               VAŠ CILJ JE NAŠ CILJ!
             </h3>
-            <p class="paragraph">
+            <p class="paragraph hide">
               Osobna podrška koju pruža naš dobro uvježbani i iskusan tim čini
               nas snažnim partnerom na području live marketinga i iskustva s
               brendom.
@@ -166,18 +230,18 @@
             <div class="composition">
               <img
                 alt="Photo 1"
-                class="composition__photo composition__photo--p1"
-                src="img/gallery__naslovna/6.jpg"
+                class="composition__photo composition__photo--p1 hide"
+                src="img/imgShow/11show.png"
               />
               <img
                 alt="Photo 2"
-                class="composition__photo composition__photo--p2"
-                src="img/gallery__naslovna/2.jpg"
+                class="composition__photo composition__photo--p2 hide"
+                src="img/imgShow/01show.png"
               />
               <img
                 alt="Photo 3"
-                class="composition__photo composition__photo--p3"
-                src="img/gallery__naslovna/5.jpg"
+                class="composition__photo composition__photo--p3 hide"
+                src="img/imgShow/02show.png"
               />
 
               <!-- <img
@@ -201,7 +265,7 @@
       <section class="section-features">
         <div class="row">
           <div class="col-1-of-4">
-            <div class="feature-box">
+            <div class="feature-box hide">
               <i class="feature-box__icon icon-basic-world"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
                 Vozimo svuda
@@ -213,7 +277,7 @@
             </div>
           </div>
           <div class="col-1-of-4">
-            <div class="feature-box">
+            <div class="feature-box hide">
               <i class="feature-box__icon icon-basic-star"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
                 Privuci publiku
@@ -225,7 +289,7 @@
             </div>
           </div>
           <div class="col-1-of-4">
-            <div class="feature-box">
+            <div class="feature-box hide">
               <i class="feature-box__icon icon-basic-display"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Led ekrani</h3>
               <p class="feature-box__text">
@@ -235,7 +299,7 @@
             </div>
           </div>
           <div class="col-1-of-4">
-            <div class="feature-box">
+            <div class="feature-box hide">
               <i class="feature-box__icon icon-basic-lightbulb"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Ideja</h3>
               <p class="feature-box__text">
@@ -249,12 +313,12 @@
 
       <section class="section-tours">
         <div class="u-center-text u-margin-bottom-big" id="section-service">
-          <h2 class="heading-secondary">Usluge koje vam nudimo</h2>
+          <h2 class="heading-secondary hide">Usluge koje vam nudimo</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-3">
-            <div class="card">
+            <div class="card hide">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
@@ -275,10 +339,10 @@
               <div class="card__side card__side--back card__side--back-1">
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Početna ponuda</p>
-                    <p class="card__price-value">5000 kn</p>
+                    <!-- <p class="card__price-only">Zvuči zanimljivo?</p> -->
+                    <!-- <p class="card__price-value">5000 kn</p> -->
                   </div>
-                  <a href="pages/roadshow.html" class="btn btn--white"
+                  <a href="roadshow.html" class="btn btn--white"
                     >Saznajte više</a
                   >
                 </div>
@@ -287,7 +351,7 @@
           </div>
 
           <div class="col-1-of-3">
-            <div class="card">
+            <div class="card hide">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--2">&nbsp;</div>
                 <h4 class="card__heading">
@@ -308,16 +372,18 @@
               <div class="card__side card__side--back card__side--back-2">
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Početna ponuda</p>
-                    <p class="card__price-value">6000 kn</p>
+                    <!-- <p class="card__price-only">Zvuči zanimljivo?</p> -->
+                    <!-- <p class="card__price-value">6000 kn</p> -->
                   </div>
-                  <a href="pages/djecji_event.html" class="btn btn--white">Saznajte više</a>
+                  <a href="roadshow.html" class="btn btn--white"
+                    >Saznajte više</a
+                  >
                 </div>
               </div>
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="card">
+            <div class="card hide">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
@@ -338,10 +404,12 @@
               <div class="card__side card__side--back card__side--back-3">
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Početna ponuda</p>
-                    <p class="card__price-value">7000 kn</p>
+                    <!-- <p class="card__price-only">Zvuči zanimljivo?</p>
+                    <p class="card__price-value">7000 kn</p> -->
                   </div>
-                  <a href="pages/promocija.html" class="btn btn--white">Saznajte više</a>
+                  <a href="roadshow.html" class="btn btn--white"
+                    >Saznajte više</a
+                  >
                 </div>
               </div>
             </div>
@@ -450,67 +518,67 @@
           <a href="" class="btn-text">Read all stories &rarr;</a>
         </div> -->
         <div class="u-center-text u-margin-bottom-big" id="section-gallery">
-          <h2 class="heading-secondary">Showtruck galerija</h2>
+          <h2 class="heading-secondary hide">Showtruck galerija</h2>
         </div>
         <div class="row container">
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/1.jpg"
-              ><img src="img/gallery__naslovna/1.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/01show.png"
+              ><img src="img/imgShow/01show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/2.jpg"
-              ><img src="img/gallery__naslovna/2.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/02show.png"
+              ><img src="img/imgShow/02show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/3.jpg"
-              ><img src="img/gallery__naslovna/3.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/03show.png"
+              ><img src="img/imgShow/03show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/4.jpg"
-              ><img src="img/gallery__naslovna/4.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/05show.png"
+              ><img src="img/imgShow/05show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/5.jpg"
-              ><img src="img/gallery__naslovna/5.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/07show.png"
+              ><img src="img/imgShow/07show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/6.jpg"
-              ><img src="img/gallery__naslovna/6.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/09show.png"
+              ><img src="img/imgShow/09show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/7.jpg"
-              ><img src="img/gallery__naslovna/7.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/13show.png"
+              ><img src="img/imgShow/13show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/10.jpg"
-              ><img src="img/gallery__naslovna/10.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/15show.png"
+              ><img src="img/imgShow/15show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/8.jpg"
-              ><img src="img/gallery__naslovna/8.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/11show.png"
+              ><img src="img/imgShow/11show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/9.jpg"
-              ><img src="img/gallery__naslovna/9.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/12show.png"
+              ><img src="img/imgShow/12show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/11.jpg"
-              ><img src="img/gallery__naslovna/11.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/16show.png"
+              ><img src="img/imgShow/16show.png"
             /></a>
           </div>
-          <div class="grid-item">
-            <a data-fancybox="gallery" href="img/gallery__naslovna/12.jpg"
-              ><img src="img/gallery__naslovna/12.jpg"
+          <div class="grid-item hide">
+            <a data-fancybox="gallery" href="img/imgShow/17show.png"
+              ><img src="img/imgShow/17show.png"
             /></a>
           </div>
         </div>
@@ -518,7 +586,7 @@
 
       <section class="section-book" id="section-contact">
         <div class="row">
-          <div class="book">
+          <div class="book hide">
             <div class="book__form">
               <form action="#" class="form">
                 <div class="u-margin-bottom-medium">
@@ -569,19 +637,33 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="footer-container">
         <div class="footer-block u-margin-bottom-medium">
           <h3 class="footer-heading u-margin-bottom-small">Navigacija</h3>
           <ul>
             <li><a href="index.html" class="footer-link">Naslovna</a></li>
-            <li><a href="index.html#section-about" class="footer-link">O nama</a></li>
-            <li><a href="index.html#section-service" class="footer-link">Usluge</a></li>
-            <li><a href="index.html#section-gallery" class="footer-link">Galerija</a></li>
-            <li><a href="index.html#section-contact" class="footer-link">Kontakt</a></li>
+            <li>
+              <a href="index.html#section-about" class="footer-link">O nama</a>
+            </li>
+            <li>
+              <a href="index.html#section-service" class="footer-link"
+                >Usluge</a
+              >
+            </li>
+            <li>
+              <a href="index.html#section-gallery" class="footer-link"
+                >Galerija</a
+              >
+            </li>
+            <li>
+              <a href="index.html#section-contact" class="footer-link"
+                >Kontakt</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="footer-block u-margin-bottom-medium"> 
+        <div class="footer-block u-margin-bottom-medium">
           <h3 class="footer-heading u-margin-bottom-small">Kontakt</h3>
           <ul>
             <li><span>E-MAIL: info@roadshow-truck.eu</span></li>
@@ -591,12 +673,12 @@
         </div>
         <div class="footer-block u-margin-bottom-medium">
           <h3 class="footer-heading u-margin-bottom-small">Lokacija</h3>
-           <ul>
+          <ul>
             <li><span>Borčec 44</span></li>
             <li><span>10090 Zagreb</span></li>
           </ul>
         </div>
-         <div class="footer-block--social u-margin-bottom-medium">
+        <div class="footer-block--social u-margin-bottom-medium">
           <ul>
             <li>
               <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
@@ -614,9 +696,9 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <!-- <section class="section-book"> -->
-          <div class="row">
-              <div class="book">
-                <a href="#section-service" class="popup__close">&times;</a>
+        <div class="row">
+          <div class="book">
+            <a href="#section-service" class="popup__close">&times;</a>
 
             <div class="book__form">
               <form action="#" class="form">
@@ -668,8 +750,8 @@
         <!-- </section> -->
       </div>
     </div>
-        
-        <!-- <div class="popup__left">
+
+    <!-- <div class="popup__left">
           <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
           <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
         </div>
@@ -689,9 +771,9 @@
             consectetur adipisicing elit.
           </p>
           <a href="#section-tours" class="btn btn--green">Book now</a>
-        </div> -->
+        </div> 
       </div>
-    </div>
+    </div>-->
 
     <script>
       function check() {
@@ -699,6 +781,7 @@
         inputs.checked = false;
       }
     </script>
+    <script src="loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="slider.js"></script>
