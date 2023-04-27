@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.main').classList.remove('hidden');
       document.querySelector('.footer').classList.remove('hidden');
     }
-  }, 17);
+  }, 16);
 });
