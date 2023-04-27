@@ -1,10 +1,10 @@
 .footer {
   background-color: $color-grey-dark-3;
-  padding: 10rem 0;
+  padding: 15rem 0 0rem 0;
   font-size: 1.7rem;
   color: $color-grey-light-2;
   display: flex;
-
+  transform: skewY(-7deg);
   justify-content: center;
   text-align: center;
 
@@ -13,7 +13,7 @@
     justify-content: space-around;
     align-items: flex-start;
     width: $grid-width;
-
+    transform: skewY(7deg);
     @include respond(tab-port) {
       flex-direction: column;
       justify-content: center;

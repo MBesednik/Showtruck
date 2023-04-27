@@ -7,7 +7,7 @@ $(document).ready(function () {
     animating = false,
     animTime = 500,
     autoSlideTimeout,
-    autoSlideDelay = 6000,
+    // autoSlideDelay = 6000,
     $pagination = $('.slider-pagi');
 
   function createBullets() {
@@ -28,15 +28,15 @@ $(document).ready(function () {
       $('.slider-control.right').addClass('inactive');
   }
 
-  function autoSlide() {
-    autoSlideTimeout = setTimeout(function () {
-      curSlide++;
-      if (curSlide > numOfSlides) curSlide = 0;
-      changeSlides();
-    }, autoSlideDelay);
-  }
+  // function autoSlide() {
+  //   autoSlideTimeout = setTimeout(function () {
+  //     curSlide++;
+  //     if (curSlide > numOfSlides) curSlide = 0;
+  //     changeSlides();
+  //   }, autoSlideDelay);
+  // }
 
-  autoSlide();
+  // autoSlide();
 
   function changeSlides(instant) {
     if (!instant) {
@@ -57,7 +57,7 @@ $(document).ready(function () {
     $slider.css('transform', 'translate3d(' + -curSlide * 100 + '%,0,0)');
     $slideBGs.css('transform', 'translate3d(' + curSlide * 50 + '%,0,0)');
     diff = 0;
-    autoSlide();
+    // autoSlide();
   }
 
   function navigateLeft() {

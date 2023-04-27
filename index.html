@@ -7,6 +7,10 @@
     <!-- SEO META TAGS -->
     <link rel="canonical" href="https://roadshow-truck.eu/" />
     <meta
+      name="google-site-verification"
+      content="liKRR_V9EBXZ9OJLoqZvmYxzwG_HPSe8-NAbyf8vA-o"
+    />
+    <meta
       name="description"
       content="Iznajmljujemo i stvaramo inovativna rješenja za
               roadshow, već razvijamo i individualizirane marketinške koncepte
@@ -56,7 +60,7 @@
       <div></div>
       <div></div>
     </div> -->
-    <div class="loading-page">
+    <!-- <div class="loading-page">
       <div class="loading-container">
         <div class="loading-text">
           <span class="heading-secondary">S</span>
@@ -69,6 +73,18 @@
           <span class="heading-secondary">C</span>
           <span class="heading-secondary">K</span>
         </div>
+      </div>
+    </div> -->
+
+    <div class="loading-page">
+      <div class="counter">
+        <h1>0 %</h1>
+        <h1 class="abs loading"></h1>
+        <h1 class="abs color loading"></h1>
+        <p>SHOWTRUCK</p>
+        <!-- This is a comment -->
+
+        <hr />
       </div>
     </div>
 
@@ -90,31 +106,22 @@
             >
           </li>
           <li class="navigation__item" for="navi-toggle">
-            <a href="#section-about" class="navigation__link" onclick="check()">
+            <a href="#info" class="navigation__link" onclick="check()">
               <span>02</span>O nama</a
             >
           </li>
           <li class="navigation__item">
-            <a
-              href="#section-service"
-              class="navigation__link"
-              onclick="check()"
+            <a href="#usluge" class="navigation__link" onclick="check()"
               ><span>03</span>Usluge</a
             >
           </li>
           <li class="navigation__item">
-            <a
-              href="#section-gallery"
-              class="navigation__link"
-              onclick="check()"
+            <a href="#galerija" class="navigation__link" onclick="check()"
               ><span>04</span>Galerija</a
             >
           </li>
           <li class="navigation__item">
-            <a
-              href="#section-contact"
-              class="navigation__link"
-              onclick="check()"
+            <a href="#kontakt" class="navigation__link" onclick="check()"
               ><span>05</span>Kontakt</a
             >
           </li>
@@ -136,7 +143,7 @@
                 <span class="heading-primary--main">Showtruck</span>
                 <span class="heading-primary--sub">istakni svoj brend</span>
               </h1>
-              <a href="#section-about" class="btn btn--white btn--animated"
+              <a href="#info" class="btn btn--white btn--animated"
                 >Saznajte više</a
               >
             </div>
@@ -150,7 +157,7 @@
                 <span class="heading-primary--main">Showtruck</span>
                 <span class="heading-primary--sub">istakni svoj brend</span>
               </h1>
-              <a href="#section-about" class="btn btn--white btn--animated"
+              <a href="#info" class="btn btn--white btn--animated"
                 >Saznajte više</a
               >
             </div>
@@ -164,7 +171,7 @@
                   <span class="heading-primary--main">Showtruck</span>
                   <span class="heading-primary--sub">istakni svoj brend</span>
                 </h1>
-                <a href="#section-about" class="btn btn--white btn--animated"
+                <a href="#info" class="btn btn--white btn--animated"
                   >Saznajte više</a
                 >
               </div>
@@ -179,7 +186,7 @@
                   <span class="heading-primary--main">Showtruck</span>
                   <span class="heading-primary--sub">istakni svoj brend</span>
                 </h1>
-                <a href="#section-about" class="btn btn--white btn--animated"
+                <a href="#info" class="btn btn--white btn--animated"
                   >Saznajte više</a
                 >
               </div>
@@ -200,7 +207,7 @@
 
     <main class="main hidden">
       <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big" id="section-about">
+        <div class="u-center-text u-margin-bottom-big" id="info">
           <h2 class="heading-secondary hide">Ukratko o nama</h2>
         </div>
 
@@ -312,7 +319,7 @@
       </section>
 
       <section class="section-tours">
-        <div class="u-center-text u-margin-bottom-big" id="section-service">
+        <div class="u-center-text u-margin-bottom-big" id="usluge">
           <h2 class="heading-secondary hide">Usluge koje vam nudimo</h2>
         </div>
 
@@ -447,10 +454,8 @@
           </div> -->
         </div>
 
-        <div class="u-center-text u-margin-bottom-huge">
-          <a href="#section-contact" class="btn btn--green"
-            >Kontaktirajte nas</a
-          >
+        <div class="u-center-text u-margin-bottom-huge hide">
+          <a href="#kontakt" class="btn btn--green">Kontaktirajte nas</a>
         </div>
       </section>
 
@@ -517,8 +522,8 @@
         <div class="u-center-text u-margin-top-huge">
           <a href="" class="btn-text">Read all stories &rarr;</a>
         </div> -->
-        <div class="u-center-text u-margin-bottom-big" id="section-gallery">
-          <h2 class="heading-secondary hide">Showtruck galerija</h2>
+        <div class="u-center-text u-margin-bottom-big hide" id="galerija">
+          <h2 class="heading-secondary">Showtruck galerija</h2>
         </div>
         <div class="row container">
           <div class="grid-item hide">
@@ -584,7 +589,7 @@
         </div>
       </section>
 
-      <section class="section-book" id="section-contact">
+      <section class="section-book" id="kontakt">
         <div class="row">
           <div class="book hide">
             <div class="book__form">
@@ -593,7 +598,7 @@
                   <h2 class="heading-secondary">Kontaktirajte nas</h2>
                 </div>
 
-                <div class="form__group">
+                <!-- <div class="form__group">
                   <input
                     type="text"
                     class="form__input"
@@ -625,10 +630,19 @@
                     required
                   ></textarea>
                   <label for="poruka" class="form__label">Unesite poruku</label>
-                </div>
-
+                </div> -->
+                <p class="paragraph" id="contact">
+                  Ne ustručavajte se kontaktirati nas. Na sve Vaše upite
+                  odgovaramo u najkraćem mogućem roku.
+                </p>
                 <div class="form__group">
-                  <button class="btn btn--green">Pošalji &rarr;</button>
+                  <a
+                    class="btn btn--green"
+                    href="mailto:info@roadshow-truck.eu;davor.rados@rg-sport.hr;"
+                  >
+                    Pošalji upit
+                    <!--&rarr;--></a
+                  >
                 </div>
               </form>
             </div>
@@ -644,22 +658,16 @@
           <ul>
             <li><a href="index.html" class="footer-link">Naslovna</a></li>
             <li>
-              <a href="index.html#section-about" class="footer-link">O nama</a>
+              <a href="index.html#info" class="footer-link">O nama</a>
             </li>
             <li>
-              <a href="index.html#section-service" class="footer-link"
-                >Usluge</a
-              >
+              <a href="index.html#usluge" class="footer-link">Usluge</a>
             </li>
             <li>
-              <a href="index.html#section-gallery" class="footer-link"
-                >Galerija</a
-              >
+              <a href="index.html#galerija" class="footer-link">Galerija</a>
             </li>
             <li>
-              <a href="index.html#section-contact" class="footer-link"
-                >Kontakt</a
-              >
+              <a href="index.html#kontakt" class="footer-link">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -698,7 +706,7 @@
         <!-- <section class="section-book"> -->
         <div class="row">
           <div class="book">
-            <a href="#section-service" class="popup__close">&times;</a>
+            <a href="#usluge" class="popup__close">&times;</a>
 
             <div class="book__form">
               <form action="#" class="form">
@@ -782,10 +790,11 @@
       }
     </script>
     <script src="loader.js"></script>
+
+    <script src="animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="slider.js"></script>
-
     <!-- 
     <section class="grid-test">
       <div class="row">

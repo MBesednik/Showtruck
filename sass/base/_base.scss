@@ -30,7 +30,7 @@ body {
   scroll-behavior: smooth;
   // padding: 3rem;
   overflow-x: hidden;
-
+  background-color: $color-grey-dark-3;
   @include respond(tab-port) {
     padding: 0;
   }
