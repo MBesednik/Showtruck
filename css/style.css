@@ -601,6 +601,33 @@ ul {
   height: auto;
   padding: 0.5rem; }
 
+.section-gallery {
+  background-color: white;
+  transform: skewY(-7deg);
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+  .section-gallery > * {
+    transform: skewY(7deg); }
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  @media (max-width: 56.25em) {
+    .gallery-container {
+      flex-direction: column; } }
+  .gallery-container img {
+    width: 30%;
+    padding: 1rem;
+    height: 30%; }
+    @media (max-width: 56.25em) {
+      .gallery-container img {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem; } }
+
 /* ---------- Page Loader ---------- */
 body {
   padding: 0;
@@ -619,7 +646,7 @@ body {
     .loading-page .counter p {
       font-size: 40px;
       color: #57b0fb; }
-    .loading-page .counter h1 {
+    .loading-page .counter h2 {
       color: white;
       font-size: 60px;
       margin-top: -10px; }
@@ -630,7 +657,7 @@ body {
     .loading-page .counter.position-relative {
       position: relative;
       width: 200px; }
-      .loading-page .counter.position-relative h1.abs {
+      .loading-page .counter.position-relative h2.abs {
         position: absolute;
         top: 0;
         width: 100%; }
@@ -1128,12 +1155,15 @@ svg {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(60deg, rgba(2, 0, 36, 0.75) 0%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 43, 52, 0.75) 100%), url("../../img/imgShow/21show.png");
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__roadshow {
+    background-image: linear-gradient(60deg, rgba(2, 0, 36, 0.75) 0%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 43, 52, 0.75) 100%), url("../../img/imgShow/21show.png"); }
+  .header__events {
+    background-image: linear-gradient(60deg, rgba(2, 0, 36, 0.75) 0%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 43, 52, 0.75) 100%), url("../../img/imgEvents/PorscheCupGrobnik/01.webp"); }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

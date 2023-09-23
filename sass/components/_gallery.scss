@@ -25,3 +25,35 @@
 //     column-count: 2;
 //   }
 // }
+
+.section-gallery {
+  background-color: white;
+  transform: skewY(-7deg);
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  img {
+    width: 30%;
+    padding: 1rem;
+    height: 30%;
+    @include respond(tab-port) {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem;
+    }
+  }
+}

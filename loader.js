@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   let counter = 0;
   let c = 0;
-  let h1 = document.querySelector('.loading-page .counter h1');
+  let h2 = document.querySelector('.loading-page .counter h2');
   let hr = document.querySelector('.loading-page .counter hr');
   let i = setInterval(function () {
-    h1.innerHTML = c + ' %';
+    h2.innerHTML = c + ' %';
     hr.style.width = c + '%';
     counter++;
     c++;
